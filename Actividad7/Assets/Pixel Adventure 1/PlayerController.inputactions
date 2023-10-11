@@ -1,5 +1,5 @@
 {
-    "name": "PlayerMovement",
+    "name": "PlayerController",
     "maps": [
         {
             "name": "Player",
@@ -13,6 +13,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "4c29522b-8b2a-4096-b1b9-bcde4229b5f2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -28,8 +37,19 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "left",
+                    "id": "71d47f4a-5845-4ac9-b075-693c1b9f761e",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "up",
-                    "id": "403b2e13-97fd-4c23-a2df-d5158de61fa1",
+                    "id": "b94f45be-a17d-4ed3-becf-8481f4bbd4fe",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -40,19 +60,8 @@
                 },
                 {
                     "name": "down",
-                    "id": "c3d489b8-332c-42de-a18c-55fda6a95d21",
+                    "id": "d7ef633d-b85a-45fa-8596-1512f28fd665",
                     "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "71d47f4a-5845-4ac9-b075-693c1b9f761e",
-                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -70,6 +79,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "7be2e0ea-d72e-49ee-a553-fea1e6c9b539",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
